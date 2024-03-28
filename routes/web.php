@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+use App\Http\Controllers\HomeController;
+ 
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::post('/convert', [HomeController::class, 'convert'])->name('home.convert');
