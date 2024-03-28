@@ -13,9 +13,6 @@
         <link rel="stylesheet" href="<?php echo asset('css/mystyle.css') ?>" type="text/css"> 
     </head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        erk = '{{ env("EXCHANGE_RATE_KEY") }}';
-    </script>
     <script type="text/javascript" src="<?php echo asset('js/convert_to_words.js') ?>"></script>
     <body>
         <div>
